@@ -23881,10 +23881,17 @@ section {
 }
 
 #About2 {
+  height: 70vh;
   background-color: #f5ebdf;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#Shop {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
