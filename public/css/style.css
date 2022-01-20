@@ -23803,14 +23803,21 @@ body {
 body h2, body .h2 {
   font-size: x-large;
 }
+body h3, body .h3 {
+  font-size: medium;
+}
+body h4, body .h4 {
+  font-size: small;
+}
 body p {
   font-size: x-small;
+  color: #777;
 }
 body button {
   border: none;
   background-color: black;
   text-transform: uppercase;
-  color: #f5ebdf;
+  color: #f7f2ed;
   padding: 2% 5%;
   font-size: x-small;
 }
@@ -23842,8 +23849,8 @@ section {
 }
 
 .beige {
-  height: 70vh;
-  background-color: #f5ebdf;
+  height: 80vh;
+  background-color: #f7f2ed;
 }
 
 #Home {
@@ -23894,7 +23901,7 @@ section {
   align-items: center;
 }
 
-#Shop, #Testimonials {
+#Shop, #Testimonials, #Journal {
   justify-content: center;
   text-align: center;
 }
@@ -23937,8 +23944,55 @@ section {
 #Testimonials #testimonialCarousel .identity .col-8 {
   text-align: left;
 }
-#Testimonials #testimonialCarousel .identity .col-8 h4, #Testimonials #testimonialCarousel .identity .col-8 .h4 {
-  font-size: small;
+
+#Journal h3, #Journal .h3 {
+  width: 90%;
+}
+#Journal .col-3 {
+  text-align: left;
+}
+#Journal .col-3 button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  margin: -1px;
+}
+
+#Contact .info .diffuserPic {
+  background-image: url("../img/contact/one-page-img-04.jpg");
+  background-size: cover;
+}
+#Contact .info .contact {
+  display: row;
+  align-items: center;
+}
+#Contact .info .contact .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Contact .info .formBg {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 5%;
+  opacity: 0.9;
+  background-color: #000;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/contact/fashion-brand-parallax-bg.jpg");
+  background-size: cover;
+}
+#Contact .info .formBg form .form-control {
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent !important;
+}
+#Contact .info .formBg form button {
+  background-color: white;
+  color: black;
+}
+#Contact .insta {
+  height: 30vh;
+  align-items: center;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */

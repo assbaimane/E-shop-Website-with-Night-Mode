@@ -8,8 +8,13 @@ body
     padding: 0px
     h2
         font-size: x-large
+    h3
+        font-size: medium
+    h4
+        font-size: small
     p
         font-size: x-small
+        color: #777
     button
         border: none
         background-color: black
@@ -40,7 +45,7 @@ body
 section
     height: 100vh
 .beige
-    height: 70vh
+    height: 80vh
     background-color: $beige
 #Home
     display: flex
@@ -81,7 +86,7 @@ section
     justify-content: center
     align-items: center
 
-#Shop,#Testimonials
+#Shop,#Testimonials,#Journal
     justify-content: center
     text-align: center
 
@@ -117,8 +122,49 @@ section
                 border-radius: 50%
             .col-8
                 text-align: left
-                h4
-                    font-size: small
 
 #Journal
+    h3
+        width: 90%
+    .col-3
+        text-align: left
+        button:hover
+            background-color: white
+            color: black
+            border: 1px solid black
+            margin : -1px
+
 #Contact
+    .info
+        .diffuserPic
+            background-image: url("../img/contact/one-page-img-04.jpg")
+            background-size: cover
+        .contact
+            display: row 
+            align-items: center
+            .row
+                display: flex
+                justify-content: center
+                align-items: center
+        .formBg
+            color: rgba(#FFF,0.5)
+            padding: 5%
+            opacity: 0.9
+            background-color: #000
+            background: linear-gradient(rgba(#000, 0.5),rgba(#000, 0.5)),url("../img/contact/fashion-brand-parallax-bg.jpg")
+            background-size: cover
+            form
+                .form-control
+                    border: none
+                    border-radius: 0px
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+                    background-color: transparent !important
+                button
+                    background-color: white
+                    color: black
+    .insta 
+        height: 30vh
+        display:flex
+        align-items: center
+        text-transform: uppercase
+
