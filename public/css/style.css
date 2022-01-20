@@ -23800,6 +23800,9 @@ body {
   margin: 0px;
   padding: 0px;
 }
+body h2, body .h2 {
+  font-size: x-large;
+}
 body p {
   font-size: x-small;
 }
@@ -23836,6 +23839,11 @@ body button {
 
 section {
   height: 100vh;
+}
+
+.beige {
+  height: 70vh;
+  background-color: #f5ebdf;
 }
 
 #Home {
@@ -23881,17 +23889,56 @@ section {
 }
 
 #About2 {
-  height: 70vh;
-  background-color: #f5ebdf;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#Shop {
-  display: flex;
+#Shop, #Testimonials {
   justify-content: center;
   text-align: center;
+}
+
+#Testimonials #testimonialCarousel {
+  display: flex;
+  justify-content: center;
+}
+#Testimonials #testimonialCarousel .opinion {
+  padding: 8% 15%;
+  border-radius: 5px;
+  position: relative;
+  text-align: justify;
+  text-justify: justify;
+}
+#Testimonials #testimonialCarousel .opinion h3, #Testimonials #testimonialCarousel .opinion .h3 {
+  font-size: small;
+  text-transform: uppercase;
+}
+#Testimonials #testimonialCarousel .opinion:before {
+  content: "";
+  width: 2px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid white;
+  border-bottom: 10px solid transparent;
+  right: 250px;
+  bottom: -20px;
+}
+#Testimonials #testimonialCarousel .identity {
+  display: flex;
+  align-items: center;
+}
+#Testimonials #testimonialCarousel .identity img {
+  height: 8vh;
+  border-radius: 50%;
+}
+#Testimonials #testimonialCarousel .identity .col-8 {
+  text-align: left;
+}
+#Testimonials #testimonialCarousel .identity .col-8 h4, #Testimonials #testimonialCarousel .identity .col-8 .h4 {
+  font-size: small;
 }
 
 /*# sourceMappingURL=style.css.map */

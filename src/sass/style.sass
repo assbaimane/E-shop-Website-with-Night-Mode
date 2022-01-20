@@ -6,6 +6,8 @@
 body
     margin: 0px
     padding: 0px
+    h2
+        font-size: x-large
     p
         font-size: x-small
     button
@@ -37,6 +39,9 @@ body
 
 section
     height: 100vh
+.beige
+    height: 70vh
+    background-color: $beige
 #Home
     display: flex
     position: relative
@@ -72,17 +77,48 @@ section
         p
             font-size: x-small
 #About2
-    height: 70vh
-    background-color: $beige
     display: flex
     justify-content: center
     align-items: center
 
-#Shop
-    display: flex
+#Shop,#Testimonials
     justify-content: center
     text-align: center
 
 #Testimonials
+    #testimonialCarousel
+        display: flex
+        justify-content: center
+        .opinion
+            padding: 8% 15%
+            border-radius: 5px
+            position: relative
+            text-align: justify
+            text-justify: justify
+            h3
+                font-size: small
+                text-transform: uppercase
+        .opinion:before 
+            content: ""
+            width: 2px
+            height: 0px
+            position: absolute
+            border-left: 10px solid transparent
+            border-right: 10px solid transparent
+            border-top: 10px solid white
+            border-bottom: 10px solid transparent
+            right: 250px
+            bottom: -20px
+        .identity
+            display: flex
+            align-items: center
+            img
+                height: 8vh
+                border-radius: 50%
+            .col-8
+                text-align: left
+                h4
+                    font-size: small
+
 #Journal
 #Contact
