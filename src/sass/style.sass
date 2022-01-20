@@ -1,0 +1,55 @@
+@import "./_fonts"
+@import "./_icones"
+@import "./_variables"
+@import "../../node_modules/bootstrap/scss/bootstrap.scss"
+
+body
+    margin: 0px
+    padding: 0px
+    
+.navbar
+    position: fixed
+    top: 0
+    z-index: 100
+    width: 100%
+    display: flex
+    padding:  0% 2%
+    border-bottom: 1px solid lightgrey
+    ul li 
+        margin: 0% 2%
+        text-transform: uppercase
+        list-style: none
+
+        &.active
+            text-decoration: underline !important
+    #navButton
+        display: flex
+        justify-content: space-around
+
+section
+    height: 100vh
+#Home
+    display: flex
+    position: relative
+    background-image: url("../img/collect/one-page-slider-01.jpg")
+    background-size: cover
+    position: relative
+    .textHome
+        justify-content: center
+        align-self: safe center
+        button
+            margin-top: 5vh
+    #women
+        position: absolute
+        top: 68vh
+        font-weight: bolder
+        font-size: 200px
+        color: white
+
+
+#About
+    
+#Shop
+#Testimonials
+#Journal
+#Contact
