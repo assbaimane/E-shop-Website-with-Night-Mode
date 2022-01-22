@@ -23821,6 +23821,16 @@ body button {
   padding: 2% 5%;
   font-size: x-small;
 }
+body .night {
+  color: white;
+}
+body .night h2, body .night .h2, body .night h3, body .night .h3, body .night h4, body .night .h4, body .night h5, body .night .h5, body .night p {
+  color: lightGray !important;
+}
+body .night button {
+  background-color: white;
+  color: black;
+}
 
 .navbar {
   position: fixed;
@@ -23829,7 +23839,7 @@ body button {
   width: 100%;
   display: flex;
   padding: 0% 2%;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .navbar ul li {
   margin: 0% 2%;
@@ -23868,6 +23878,7 @@ section {
   margin-top: 5vh;
 }
 #Home #women {
+  text-overflow: ellipsis;
   position: absolute;
   top: 68vh;
   font-weight: bolder;
@@ -23877,6 +23888,7 @@ section {
 
 #About {
   color: #808080;
+  z-index: 1000;
 }
 #About .row {
   display: flex;
