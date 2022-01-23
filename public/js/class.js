@@ -12,7 +12,11 @@ class Clothes{
         itemToAdd.classList.add("col-25","mx-auto","mb-4")
         itemToAdd.innerHTML= `
             <div class="mb-4">
-                <img src=${this.src} class="img-fluid" alt="clothes pic">
+                <img src=${this.src} class="img-fluid clothesPic" alt="clothes pic">
+                <div class="row box" hidden>
+                    <button class="col-6"><i class="far fa-heart"></i></button>
+                    <button class="col-6"><i class="fas fa-cart-plus"></i></button>
+                </div>
             </div>
             <div class="text-center">
                 <h4>${this.name}</h4>
@@ -20,6 +24,6 @@ class Clothes{
             </div>`
         productGrid.appendChild(itemToAdd)
     }
-  }
+}
 
 export {Clothes}

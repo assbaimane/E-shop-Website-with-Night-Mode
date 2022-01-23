@@ -63,3 +63,18 @@ let clothes = [
 clothes.forEach(element => {
     element.addItem();
 });
+
+
+// Show button favourites & cart
+let clothesPic = document.querySelectorAll(".clothesPic");
+
+clothesPic.forEach(element => {
+    element.addEventListener("mouseover",()=>{
+        element.nextElementSibling.hidden = false;
+        element.parentElement.classList.remove("mb-4");
+    })
+    element.addEventListener("mouseout",()=>{
+        element.nextElementSibling.hidden = true;
+        element.parentElement.classList.add("mb-4");
+    })
+});

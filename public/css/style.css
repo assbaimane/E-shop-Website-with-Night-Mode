@@ -23917,6 +23917,16 @@ body .night button {
 #Shop .col-25, #Testimonials .col-25, #Journal .col-25 {
   width: 19%;
 }
+#Shop .col-25 .box, #Testimonials .col-25 .box, #Journal .col-25 .box {
+  position: relative;
+  top: -5vh;
+}
+#Shop .col-25 .box .col-6, #Testimonials .col-25 .box .col-6, #Journal .col-25 .box .col-6 {
+  height: 5vh;
+}
+#Shop .col-25 .box .col-6:first-of-type, #Testimonials .col-25 .box .col-6:first-of-type, #Journal .col-25 .box .col-6:first-of-type {
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
 
 #Testimonials #testimonialCarousel {
   display: flex;
