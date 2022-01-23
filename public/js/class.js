@@ -20,7 +20,7 @@ class Clothes{
             </div>
             <div class="text-center">
                 <h4>${this.name}</h4>
-                <p>${this.price}</p>
+                <p><del>${this.oldprice}</del> ${this.price}</p>
             </div>`
         productGrid.appendChild(itemToAdd)
     }
