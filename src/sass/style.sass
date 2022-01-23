@@ -51,12 +51,12 @@ body
         justify-content: space-around
 
 section
-    height: 100vh
 .beige
     height: 80vh
     background-color: $beige
     
 #Home
+    height: 100vh
     display: flex
     position: relative
     background-image: url("../img/collect/one-page-slider-01.jpg")
@@ -100,6 +100,8 @@ section
 #Shop,#Testimonials,#Journal
     justify-content: center
     text-align: center
+    .col-25
+        width: 19% //1% for margin
 
 #Testimonials
     #testimonialCarousel

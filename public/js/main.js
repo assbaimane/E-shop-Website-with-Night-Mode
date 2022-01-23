@@ -1,3 +1,5 @@
+//------------------------------ HEADER ------------------------------ 
+
 // NavBar change color management
 let navBar = document.querySelector("nav");
 let logoBar = document.querySelector(".navLogo img");
@@ -30,10 +32,34 @@ nightMode.addEventListener("click", () => {
     });
 })
 
-
 // Login Modal
 let userButton = document.querySelector(".fa-user");
 userButton.addEventListener("click", () => {
     userButton.dataBsToggle = "modal"
     userButton.dataBsTarget = "#exampleModal"
+});
+
+
+//-------------------------  SECTION SHOP ------------------------- 
+
+import {Clothes} from "./class.js"
+
+// Product creation
+var productGrid = document.querySelector("#productGrid");
+let clothes = [
+    new Clothes("Textured Sweater","","$50.00","./public/img/fashion/fashion-recent-products-01-1-1.jpg","./public/img/fashion/fashion-recent-products-01-a-1-1.jpg"),
+    new Clothes("Traveller Shirt","","$510.00","./public/img/fashion/fashion-recent-products-02-1-1.jpg","./public/img/fashion/fashion-recent-products-02-a-1-1-1.jpg"),
+    new Clothes("Crewneck Sweatshirt","","$20.00 - $50.00","./public/img/fashion/fashion-recent-products-01-b.jpg","./public/img/fashion/fashion-recent-products-03-a-1-1.jpg"),
+    new Clothes("Skinny Trousers","$200.00","$160.00","./public/img/fashion/fashion-recent-products-04.jpg","./public/img/fashion/fashion-recent-products-04-a-1.jpg"),
+    new Clothes("High Neck Sweater","$40.00","$35.00","./public/img/fashion/fashion-recent-products-05-1.jpg","./public/img/fashion/fashion-recent-products-05-a-1.jpg"),
+    // Row 2
+    new Clothes("Sleeve Sweater","$140.00","$120.00","./public/img/fashion/fashion-recent-products-06-1.jpg","./public/img/fashion/fashion-recent-products-06-a-1.jpg"),
+    new Clothes("Pocket Sweatshirt","","$410.00","./public/img/fashion/fashion-recent-products-07-1.jpg","./public/img/fashion/fashion-recent-products-07-a-1.jpg"),
+    new Clothes("Top With Pleated","","$20.00 - $50.00","./public/img/fashion/fashion-recent-products-08-1.jpg","./public/img/fashion/fashion-recent-products-08-a.jpg"),
+    new Clothes("Cotton Sweater","$180.00","$155.00","./public/img/fashion/fashion-recent-products-01-d.jpg","./public/img/fashion/fashion-recent-products-09-a-1-1.jpg"),
+    new Clothes("Texture Plain Regular","$85.00","$70.00","./public/img/fashion/fashion-recent-products-10-1.jpg","./public/img/fashion/fashion-recent-products-10-a-1.jpg")
+];
+
+clothes.forEach(element => {
+    element.addItem();
 });
