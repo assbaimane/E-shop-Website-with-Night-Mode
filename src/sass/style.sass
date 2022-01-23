@@ -52,7 +52,6 @@ body
 
 section
 .beige
-    height: 80vh
     background-color: $beige
     
 #Home
@@ -111,37 +110,43 @@ section
                 border-right: 1px solid rgba(#FFF,0.3)
 
 #Testimonials
+    cursor: url("../img/icon-move-black.png") 2 2, ew-resize
+    #previousTestimonial,#nextTestimonial
+            background-color: transparent 
+            color: black
     #testimonialCarousel
         display: flex
         justify-content: center
-        .opinion
-            padding: 8% 15%
-            border-radius: 5px
-            position: relative
-            text-align: justify
-            text-justify: justify
-            h3
-                font-size: small
-                text-transform: uppercase
-        .opinion:before 
-            content: ""
-            width: 2px
-            height: 0px
-            position: absolute
-            border-left: 10px solid transparent
-            border-right: 10px solid transparent
-            border-top: 10px solid white
-            border-bottom: 10px solid transparent
-            right: 250px
-            bottom: -20px
-        .identity
-            display: flex
-            align-items: center
-            img
-                height: 8vh
-                border-radius: 50%
-            .col-8
-                text-align: left
+        .carouselItem
+            // transition: "2s ease"
+            .opinion
+                padding: 8% 15%
+                border-radius: 5px
+                position: relative
+                text-align: justify
+                text-justify: justify
+                h3
+                    font-size: small
+                    text-transform: uppercase
+            .opinion:before 
+                content: ""
+                width: 2%
+                height: 0px
+                position: absolute
+                border-left: 10px solid transparent
+                border-right: 10px solid transparent
+                border-top: 10px solid white
+                border-bottom: 10px solid transparent
+                left: 10%
+                bottom: -10%
+            .identity
+                display: flex
+                align-items: center
+                img
+                    height: 8vh
+                    border-radius: 50%
+                .col-8
+                    text-align: left
 
 #Journal
     h3

@@ -23855,7 +23855,6 @@ body .night button {
 }
 
 .beige {
-  height: 80vh;
   background-color: #f7f2ed;
 }
 
@@ -23928,42 +23927,49 @@ body .night button {
   border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+#Testimonials {
+  cursor: url("../img/icon-move-black.png") 2 2, ew-resize;
+}
+#Testimonials #previousTestimonial, #Testimonials #nextTestimonial {
+  background-color: transparent;
+  color: black;
+}
 #Testimonials #testimonialCarousel {
   display: flex;
   justify-content: center;
 }
-#Testimonials #testimonialCarousel .opinion {
+#Testimonials #testimonialCarousel .carouselItem .opinion {
   padding: 8% 15%;
   border-radius: 5px;
   position: relative;
   text-align: justify;
   text-justify: justify;
 }
-#Testimonials #testimonialCarousel .opinion h3, #Testimonials #testimonialCarousel .opinion .h3 {
+#Testimonials #testimonialCarousel .carouselItem .opinion h3, #Testimonials #testimonialCarousel .carouselItem .opinion .h3 {
   font-size: small;
   text-transform: uppercase;
 }
-#Testimonials #testimonialCarousel .opinion:before {
+#Testimonials #testimonialCarousel .carouselItem .opinion:before {
   content: "";
-  width: 2px;
+  width: 2%;
   height: 0px;
   position: absolute;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid white;
   border-bottom: 10px solid transparent;
-  right: 250px;
-  bottom: -20px;
+  left: 10%;
+  bottom: -10%;
 }
-#Testimonials #testimonialCarousel .identity {
+#Testimonials #testimonialCarousel .carouselItem .identity {
   display: flex;
   align-items: center;
 }
-#Testimonials #testimonialCarousel .identity img {
+#Testimonials #testimonialCarousel .carouselItem .identity img {
   height: 8vh;
   border-radius: 50%;
 }
-#Testimonials #testimonialCarousel .identity .col-8 {
+#Testimonials #testimonialCarousel .carouselItem .identity .col-8 {
   text-align: left;
 }
 

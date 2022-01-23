@@ -78,3 +78,18 @@ clothesPic.forEach(element => {
         element.parentElement.classList.add("mb-4");
     })
 });
+
+
+// Carousel on testimonials 
+let carouselItem = document.querySelectorAll(".carouselItem");
+let carousel = document.querySelector("#testimonialCarousel");
+let previousTestimonial = document.querySelector("#previousTestimonial");
+let nextTestimonial = document.querySelector("#nextTestimonial");
+
+previousTestimonial.addEventListener("click",()=>{
+    carousel.appendChild(carousel.children[0]);
+});
+
+nextTestimonial.addEventListener("click",()=>{
+    carousel.insertBefore(carousel.children[carouselItem.length-1],carousel.children[0])
+});

@@ -143,57 +143,71 @@
     </section>
 
     <!----------------------- SECTION TESTIMONIAL ------------------------>
-    <section id="Testimonials" class="beige">
+    <section id="Testimonials" class="beige pb-5">
         <div class="pt-5 pb-3">
             <h2>Testimonial</h2>
             <p>Lorem ipsum dolor sit amet, repellat facere and <br> voluptatem ex maxime industry</p>
         </div>
-        <div class="row mx-auto" id="testimonialCarousel">
-            <div id="firstTestimonial" class="col-3 p-2">
-                <div class="opinion bg-white row">
-                    <h3>We love digital agencies</h3>
-                    <p>Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, aliquam. consectetur adipisicing elit. Alias optio at possimus sed eaque aliquam, reiciendis repellat voluptatem hic dicta?</p>
-                </div>
-                <div class="identity row pt-3">
-                    <div class="col-4">
-                        <div><img src="./public/img/testimonials/image-2.png" alt=""></div>
+
+        
+        <div class="row">
+            <!-- Left button (previous) -->
+            <div class="col-1 mx-auto my-auto stretc"><button id="previousTestimonial" aria-label="Previous slide"><</button></div>
+            <!-- Carousel Item -->
+            <div class="col-10">
+                <div class="row" id="testimonialCarousel">
+                    <!-- First Testimonial -->
+                    <div id="firstTestimonial" class="carouselItem col-3 mx-auto">
+                        <div class="opinion bg-white row">
+                            <h3>We love creative design</h3>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, aliquam. consectetur adipisicing elit. Alias optio at possimus sed eaque aliquam, reiciendis repellat voluptatem hic dicta?</p>
+                        </div>
+                        <div class="identity row pt-3">
+                            <div class="col-4">
+                                <div><img src="./public/img/testimonials/image-2.png" alt=""></div>
+                            </div>
+                            <div class="col-8">
+                                <h4>Mattie Stephanie</h4>
+                                <p class="mt-n2">Manager</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-8">
-                        <h4>Mattie Stephanie</h4>
-                        <p class="mt-n2">Manager</p>
+                    <!-- Second Testimonial -->
+                    <div id="secondTestimonial" class="carouselItem col-3 mx-auto">
+                        <div class="opinion bg-white row">
+                            <h3>We love digital agencies</h3>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, aliquam. consectetur adipisicing elit. Alias optio at possimus sed eaque aliquam, reiciendis repellat voluptatem hic dicta?</p>
+                        </div>
+                        <div class="identity row pt-3">
+                            <div class="col-4">
+                                <div><img src="./public/img/testimonials/image-1-1.png" alt=""></div>
+                            </div>
+                            <div class="col-8">
+                                <h4>Shoko Mogikuro</h4>
+                                <p class="mt-n2">Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Last Testimonial -->
+                    <div id="lastTestimonial" class="carouselItem col-3 mx-auto">
+                        <div class="opinion bg-white row">
+                            <h3>We from layout</h3>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, aliquam. consectetur adipisicing elit. Alias optio at possimus sed eaque aliquam, reiciendis repellat voluptatem hic dicta?</p>
+                        </div>
+                        <div class="identity row pt-3">
+                            <div class="col-4">
+                                <div><img src="./public/img/testimonials/image-3.png" alt=""></div>
+                            </div>
+                            <div class="col-8">
+                                <h4>Alexandra Marward</h4>
+                                <p class="mt-n2">Director</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="secondTestimonial" class="col-3 p-2">
-                <div class="opinion bg-white row">
-                    <h3>We love digital agencies</h3>
-                    <p>Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, aliquam. consectetur adipisicing elit. Alias optio at possimus sed eaque aliquam, reiciendis repellat voluptatem hic dicta?</p>
-                </div>
-                <div class="identity row pt-3">
-                    <div class="col-4">
-                        <div><img src="./public/img/testimonials/image-1-1.png" alt=""></div>
-                    </div>
-                    <div class="col-8">
-                        <h4>Shoko Mogikuro</h4>
-                        <p class="mt-n2">Designer</p>
-                    </div>
-                </div>
-            </div>
-            <div id="lastTestimonial" class="col-3 p-2">
-                <div class="opinion bg-white row">
-                    <h3>We love digital agencies</h3>
-                    <p>Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, aliquam. consectetur adipisicing elit. Alias optio at possimus sed eaque aliquam, reiciendis repellat voluptatem hic dicta?</p>
-                </div>
-                <div class="identity row pt-3">
-                    <div class="col-4">
-                        <div><img src="./public/img/testimonials/image-3.png" alt=""></div>
-                    </div>
-                    <div class="col-8">
-                        <h4>Alexandra Marward</h4>
-                        <p class="mt-n2">Director</p>
-                    </div>
-                </div>
-            </div>
+            <!-- Right Button (Next) -->
+            <div class="col-1 mx-auto my-auto"><button id="nextTestimonial" aria-label="Next slide">></button></div>
         </div>
     </section>
 
