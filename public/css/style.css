@@ -23821,6 +23821,10 @@ body button {
   padding: 2% 5%;
   font-size: x-small;
 }
+body button a {
+  color: white;
+  text-decoration: none;
+}
 body .night {
   color: white;
 }
@@ -23853,9 +23857,46 @@ body .night button {
   display: flex;
   justify-content: space-around;
 }
+.navbar #navButton .fa-heart, .navbar #navButton .fa-shopping-bag {
+  position: relative;
+}
+.navbar #navButton .fa-heart .favDot, .navbar #navButton .fa-heart .shopDot, .navbar #navButton .fa-shopping-bag .favDot, .navbar #navButton .fa-shopping-bag .shopDot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1vw;
+  height: 1vw;
+  position: absolute;
+  background-color: black;
+  border-radius: 50%;
+  border: 1px solid white;
+  top: -45%;
+  right: -45%;
+  color: white;
+  font-size: xx-small;
+  font-weight: 400;
+}
 
 .beige {
   background-color: #f7f2ed;
+}
+
+#Shop, #Testimonials, #Journal {
+  justify-content: center;
+  text-align: center;
+}
+#Shop .col-25, #Testimonials .col-25, #Journal .col-25 {
+  width: 19%;
+}
+#Shop .col-25 .box, #Testimonials .col-25 .box, #Journal .col-25 .box {
+  position: relative;
+  top: -5vh;
+}
+#Shop .col-25 .box .col-6, #Testimonials .col-25 .box .col-6, #Journal .col-25 .box .col-6 {
+  height: 5vh;
+}
+#Shop .col-25 .box .col-6:first-of-type, #Testimonials .col-25 .box .col-6:first-of-type, #Journal .col-25 .box .col-6:first-of-type {
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 #Home {
@@ -23907,24 +23948,6 @@ body .night button {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#Shop, #Testimonials, #Journal {
-  justify-content: center;
-  text-align: center;
-}
-#Shop .col-25, #Testimonials .col-25, #Journal .col-25 {
-  width: 19%;
-}
-#Shop .col-25 .box, #Testimonials .col-25 .box, #Journal .col-25 .box {
-  position: relative;
-  top: -5vh;
-}
-#Shop .col-25 .box .col-6, #Testimonials .col-25 .box .col-6, #Journal .col-25 .box .col-6 {
-  height: 5vh;
-}
-#Shop .col-25 .box .col-6:first-of-type, #Testimonials .col-25 .box .col-6:first-of-type, #Journal .col-25 .box .col-6:first-of-type {
-  border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 #Testimonials {
@@ -24022,7 +24045,7 @@ body .night button {
 }
 
 .insta {
-  height: 20vh !important;
+  height: 20vh;
   text-transform: uppercase;
 }
 

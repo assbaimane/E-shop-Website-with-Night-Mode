@@ -14,7 +14,7 @@ class Clothes{
             <div class="mb-4">
                 <img src=${this.src} class="img-fluid clothesPic" alt="clothes pic">
                 <div class="row box" hidden>
-                    <button class="col-6"><i class="far fa-heart"></i></button>
+                    <button class="col-6"><i class="far fa-heart heart"></i></button>
                     <button class="col-6"><i class="fas fa-cart-plus"></i></button>
                 </div>
             </div>

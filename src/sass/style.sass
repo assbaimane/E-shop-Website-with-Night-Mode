@@ -3,6 +3,7 @@
 @import "./_variables"
 @import "../../node_modules/bootstrap/scss/bootstrap.scss"
 
+// Document settings
 body
     margin: 0px
     padding: 0px
@@ -22,7 +23,9 @@ body
         color: $beige
         padding: 2% 5%
         font-size: x-small
-
+        a
+            color: white
+            text-decoration: none
     .night
         color: white
         h2,h3,h4,h5,p
@@ -30,8 +33,8 @@ body
         button
             background-color: white
             color: black
-        
-    
+
+// Navbar
 .navbar
     position: fixed
     top: 0
@@ -40,7 +43,7 @@ body
     display: flex
     padding:  0% 2%
     border-bottom: 1px solid rgba(#000,0.1)
-    ul li 
+    ul li
         margin: 0% 2%
         text-transform: uppercase
         list-style: none
@@ -49,11 +52,42 @@ body
     #navButton
         display: flex
         justify-content: space-around
+        .fa-heart,.fa-shopping-bag
+            position: relative
+            .favDot,.shopDot
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 1vw
+                height: 1vw
+                position: absolute
+                background-color: black
+                border-radius: 50%
+                border: 1px solid white
+                top: -45%
+                right: -45%
+                color: white
+                font-size: xx-small
+                font-weight: 400 //for fas f-w (900 instead of 400 like far)
 
+// Section : General
 section
 .beige
     background-color: $beige
-    
+#Shop,#Testimonials,#Journal
+    justify-content: center
+    text-align: center
+    .col-25
+        width: 19% //1% for margin
+        .box
+            position: relative
+            top: -5vh
+            .col-6
+                height: 5vh
+            .col-6:first-of-type
+                border-right: 1px solid rgba(#FFF,0.3)
+
+// Section : Home
 #Home
     height: 100vh
     display: flex
@@ -74,7 +108,7 @@ section
         font-size: 200px
         color: white
 
-
+// Sections : About (2)
 #About
     color: #808080
     z-index: 1000
@@ -96,19 +130,7 @@ section
     justify-content: center
     align-items: center
 
-#Shop,#Testimonials,#Journal
-    justify-content: center
-    text-align: center
-    .col-25
-        width: 19% //1% for margin
-        .box
-            position: relative
-            top: -5vh
-            .col-6
-                height: 5vh
-            .col-6:first-of-type
-                border-right: 1px solid rgba(#FFF,0.3)
-
+// Section : Testimonials
 #Testimonials
     cursor: url("../img/icon-move-black.png") 2 2, ew-resize
     #previousTestimonial,#nextTestimonial
@@ -148,6 +170,7 @@ section
                 .col-8
                     text-align: left
 
+// Section : Journal
 #Journal
     h3
         width: 90%
@@ -159,6 +182,7 @@ section
             border: 1px solid black
             margin: -1px
 
+// Section : Contact
 #Contact
     .info
         height: 80vh
@@ -188,10 +212,12 @@ section
                 button
                     background-color: white
                     color: black
+// Section : Contact indépendante
 .insta 
-    height: 20vh !important
+    height: 20vh
     text-transform: uppercase
 
+// Footer
 footer
     background-color: #1e1e1e
     h4

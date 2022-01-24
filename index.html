@@ -29,10 +29,9 @@
         <span id="navButton" class="col-2">
             <i class="fas fa-search"></i>
             <i class="far fa-user" data-bs-toggle="modal" data-bs-target="#loginModal"></i>
-            <i class="far fa-heart"></i>
-            <i class="fas fa-shopping-bag"></i>
-            <i class="far fa-moon"></i>
-            
+            <i class="far fa-heart"><div class="favDot" hidden></div></i>
+            <i class="fas fa-shopping-bag"><div class="shopDot" hidden></div></i>
+            <i class="far fa-moon"></i>      
         </span>
     </nav>
 
@@ -77,7 +76,7 @@
             <h1>Brown leather<br>women's bags</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt vero quis quos incidunt, blanditiis magnam cum dolore temporibus illum tempore?</p>
             <span><del>Regular £69.00</del></span><span><b> Just £59.00</b></span><br>   
-            <button>SHOP WOMEN</button>
+            <button><a href="#Shop">SHOP WOMEN</a></button>
         </div>
         <div class="d-flex justify-content-center">
             <span id="women">womens</span>
@@ -144,15 +143,15 @@
 
     <!----------------------- SECTION TESTIMONIAL ------------------------>
     <section id="Testimonials" class="beige pb-5">
+        <!-- Title Section -->
         <div class="pt-5 pb-3">
             <h2>Testimonial</h2>
             <p>Lorem ipsum dolor sit amet, repellat facere and <br> voluptatem ex maxime industry</p>
         </div>
-
-        
+        <!-- Testimonials -->
         <div class="row">
             <!-- Left button (previous) -->
-            <div class="col-1 mx-auto my-auto stretc"><button id="previousTestimonial" aria-label="Previous slide"><</button></div>
+            <div class="col-1 mx-auto my-auto"><button id="previousTestimonial" aria-label="Previous slide"><</button></div>
             <!-- Carousel Item -->
             <div class="col-10">
                 <div class="row" id="testimonialCarousel">

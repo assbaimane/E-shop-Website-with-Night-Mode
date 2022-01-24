@@ -79,6 +79,32 @@ clothesPic.forEach(element => {
     })
 });
 
+// Add a cloth in fav or cart
+let favButtons = document.querySelectorAll(".heart");
+let cartButtons = document.querySelectorAll(".fa-cart-plus");
+let favDot = document.querySelector(".favDot");
+let shopDot = document.querySelector(".shopDot");
+
+let nbFav = 0;
+favButtons.forEach(element => {
+    element.parentElement.addEventListener("click",()=>{ //element parent to cible button instead of i
+        favDot.hidden = false;
+        nbFav ++;
+        favDot.innerHTML = nbFav;
+    })
+});
+
+let nbCart = 0;
+cartButtons.forEach(element => {
+    element.parentElement.addEventListener("click",()=>{
+        shopDot.hidden = false;
+        nbCart ++;
+        shopDot.innerHTML = nbCart;
+    })
+});
+
+
+
 
 // Carousel on testimonials 
 let carouselItem = document.querySelectorAll(".carouselItem");
