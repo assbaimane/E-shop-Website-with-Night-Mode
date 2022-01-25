@@ -41,14 +41,23 @@ body
     z-index: 100
     width: 100%
     display: flex
-    padding:  0% 2%
+    padding:  1% 4%
     border-bottom: 1px solid rgba(#000,0.1)
-    ul li
-        margin: 0% 2%
-        text-transform: uppercase
-        list-style: none
-        &.active
-            text-decoration: underline !important
+    font-size: small
+    #navbarSupportedContent
+        ul
+            display: flex
+            justify-content: center
+        ul li
+            a
+                font-weight: 500
+                color: black !important
+                margin: 0% 2%
+                text-transform: uppercase
+                list-style: none
+                &.active
+                    text-decoration: underline !important
+
     #navButton
         display: flex
         justify-content: space-around
@@ -74,6 +83,8 @@ body
 section
 .beige
     background-color: $beige
+.night
+    background-color: black
 #Shop,#Testimonials,#Journal
     justify-content: center
     text-align: center
@@ -101,18 +112,17 @@ section
         button
             margin-top: 5vh
     #women
-        text-overflow: ellipsis
+        z-index: 2
         position: absolute
         top: 68vh
         font-weight: bolder
-        font-size: 200px
         color: white
 
 // Sections : About (2)
 #About
     color: #808080
-    z-index: 1000
     .row
+        z-index: 5
         display: flex
         justify-content: center
         text-align: center

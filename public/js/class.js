@@ -9,7 +9,7 @@ class Clothes{
 
     addItem(){
         let itemToAdd = document.createElement("div")
-        itemToAdd.classList.add("col-25","mx-auto","mb-4")
+        itemToAdd.classList.add("col-25","mx-auto","mb-4","p-1")
         itemToAdd.innerHTML= `
             <div class="mb-4">
                 <img src=${this.src} class="img-fluid clothesPic" alt="clothes pic">

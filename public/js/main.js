@@ -23,7 +23,7 @@ nightMode.addEventListener("click", () => {
     homeSection.classList.add("night");
     homeSection.style.backgroundImage = "url('./public/img/collect/one-page-slider-dark.png')";
     document.querySelector("body").classList.add("night");
-
+    
     sectionAll.forEach(element => {
         element.style.backgroundColor = "black"
     });

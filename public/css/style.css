@@ -14663,6 +14663,10 @@ textarea.form-control-lg {
   font-size: calc(1.28125rem + 0.375vw) !important;
 }
 
+.fs-0 {
+  font-size: calc(2.375rem + 13.5vw) !important;
+}
+
 .fs-7 {
   font-size: 1.25rem !important;
 }
@@ -23754,6 +23758,10 @@ textarea.form-control-lg {
   .fs-6 {
     font-size: 1.5625rem !important;
   }
+
+  .fs-0 {
+    font-size: 12.5rem !important;
+  }
 }
 @media print {
   .d-print-inline {
@@ -23842,15 +23850,22 @@ body .night button {
   z-index: 100;
   width: 100%;
   display: flex;
-  padding: 0% 2%;
+  padding: 1% 4%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: small;
 }
-.navbar ul li {
+.navbar #navbarSupportedContent ul {
+  display: flex;
+  justify-content: center;
+}
+.navbar #navbarSupportedContent ul li a {
+  font-weight: 500;
+  color: black !important;
   margin: 0% 2%;
   text-transform: uppercase;
   list-style: none;
 }
-.navbar ul li.active {
+.navbar #navbarSupportedContent ul li a.active {
   text-decoration: underline !important;
 }
 .navbar #navButton {
@@ -23879,6 +23894,10 @@ body .night button {
 
 .beige {
   background-color: #f7f2ed;
+}
+
+.night {
+  background-color: black;
 }
 
 #Shop, #Testimonials, #Journal {
@@ -23915,19 +23934,18 @@ body .night button {
   margin-top: 5vh;
 }
 #Home #women {
-  text-overflow: ellipsis;
+  z-index: 2;
   position: absolute;
   top: 68vh;
   font-weight: bolder;
-  font-size: 200px;
   color: white;
 }
 
 #About {
   color: #808080;
-  z-index: 1000;
 }
 #About .row {
+  z-index: 5;
   display: flex;
   justify-content: center;
   text-align: center;
